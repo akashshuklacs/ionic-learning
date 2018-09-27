@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list *ngFor="let item of items" (click)="itemClick(item.id)">
+    <ion-item>
+      <h1>{{item.id}}</h1>
+      {{item.title}}
+      <br/>
+      {{item.body}}
+
+
+    </ion-item>
+
+  </ion-list>
+</ion-content>
